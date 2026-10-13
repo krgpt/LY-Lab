@@ -1,0 +1,57 @@
+LY Lab — Enterprise AI & Security Consulting English Translation ("consulting" folder)
+Source: ai rebuild.txt (shown in full via "Show more" on the site)
+
+- Example Guide to Executive & AI Consulting -
+A Guide to Driving AI Consulting (AX/DX) for Small & Mid-Sized Enterprises
+
+For small and mid-sized enterprises, consulting must prove fast ROI and shop-floor applicability — not grand narratives.
+
+If DX (digital transformation) builds the system that digitizes and connects work and data, AX (AI transformation) is the structural shift where AI performs work itself or supports decisions on top of digitized data and systems.
+
+Combining both: a 4-phase end-to-end consulting playbook for reinventing company structure and ways of working.
+
+Phase 1: Diagnosis & Concept Alignment (weeks 1–2) — clarifying concepts and assessing where the company stands
+Workshops with the CEO and key executives define DX vs. AX and assess where the company stands today.
+- DX vs. AX framing
+- DX: moving manual paper/Excel work onto digital systems (ERP, CRM, groupware) and accumulating data
+- AX: using accumulated data so AI automates work and supports analysis and judgment — fundamentally changing how work gets done
+- DX/AX maturity assessment
+- Data asset review: how well internal data is accumulated in unstructured (PDF, documents) and structured (DB, ERP) form
+- IT infrastructure & security review: on-premises/cloud environments, network separation, and data-leak risk levels
+- Key deliverables: DX/AX assessment report, executive direction agreement
+
+Phase 2: Domain Breakdown & Opportunity Discovery (weeks 3–4) — where should AI attach?
+Decompose the company's value chain (planning – production/development – marketing/sales – corporate support) to surface AI target tasks.
+- Process breakdown
+- Surface bottleneck tasks that are highly repetitive with the right judgment complexity, by department
+- Examples: sales (auto-generating quotes/proposals), corporate support (natural-language revenue analysis on ERP data), production/quality (RAG search over technical manuals, vision inspection)
+- Priority matrix
+- Map priorities on business impact (time saved) vs. technical feasibility (data readiness)
+- Select 2–3 quick-win tasks for fast results plus long-term company-wide initiatives
+- Key deliverables: company-wide AX roadmap, prioritized initiative definitions
+
+Phase 3: PoC & Structural Design (weeks 5–8) — proving small wins, redesigning the organization
+Instead of changing everything at once, prove real performance and productivity gains on selected quick-win tasks.
+- PoC execution
+- Build and test AI workflows (RAG document search, AI agents, API integrations) on target tasks
+- Quantitative KPIs: measure real before/after results such as task-time reduction and error-rate reduction
+- Redesigning the organization & ways of working
+- Redefining human–AI roles: AI agents handle data gathering and drafting; people own final review and decisions
+- Security & governance: PII masking and internal confidentiality-leak prevention guidelines
+- Key deliverables: PoC results report, AI-centric organization and workflow redesign (SOP)
+
+Phase 4: Company-Wide Rollout & Internalization (weeks 9–12) — building an AI organization that lasts
+Hand over the system so the company sustains and grows AX on its own after consulting ends.
+- In-house AI literacy training & culture
+- AI leadership training for C-level and managers (AI-driven decision systems)
+- Hands-on prompt engineering & AI-agent practice for practitioners
+- Forming an in-house AX task force (TF) and handover
+- Selecting AI champions per department to keep discovering new AI initiatives
+- Wrap-up & operating roadmap
+- Mid-to-long-term AI infrastructure plans and government-program linkage guidance
+- Key deliverables: department AI playbooks (SOP), in-house AI internalization training manual
+
+Keys to Business Success
+1. Defuse security concerns first: present security measures from the diagnosis stage — no-training-on-data principles, on-premises/closed-network API integration.
+2. Connect, don't replace: instead of ripping out ERP/MES, design AI to work alongside via APIs or RAG — cutting cost and risk.
+3. Make bottom-up wins visible: solve practitioners' everyday annoyances first (spreadsheet cleanup, document summaries) to minimize resistance.

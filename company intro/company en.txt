@@ -1,0 +1,12 @@
+LY Lab — Company Intro English Translation ("commpany intro" folder)
+
+[Section title]
+01 ● ABOUT — About.
+
+[Body]
+A total AI & security technology partner driving business safety and growth. Building on decades of development and security-solution experience, we lead in practical, dependable technology. From web and app development to cybersecurity, cutting-edge AI convergence, and professional training that strengthens employee capability, we deliver the total solutions that carry enterprise digital transformation (DX) and technology innovation to success.
+
+[Team]
+- Jack Lee (default view; full bio: "Jack Lee eng.txt" in this folder)
+- Nathan Yim (button; full bio: "Nathan Yim eng.txt" in this folder)
+- + Coming soon × 2 placeholder slots reserved for future members

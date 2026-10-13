@@ -1,0 +1,22 @@
+LY Lab — Security Solutions English Translation ("security solution" folder)
+
+[Section title]
+02 ● SECURITY — Cybersecurity Solutions.
+Protecting core enterprise assets from increasingly intelligent threats.
+
+[Shadow Guard — https://shadowguard.co.kr/ (opens in a new window)]
+We don't block AI — we block only sensitive data leaks.
+SHADOWGUARD is an AI security governance service that, instead of blocking employees' generative AI, inspects and controls in real time only the data and conversations flowing toward AI. Employees use AI freely, while the company keeps its critical information safe.
+
+[AI PEN tester (in development)]
+A platform that combines the deep insight of security experts with the overwhelming speed of AI to automatically detect and verify enterprise security vulnerabilities — from code to live production environments.
+
+- Core components
+(1) Code (static analysis): Integrates with millions of lines of source code with no complex setup for exhaustive inspection. Tracks data flows to preemptively eliminate structural flaws and threats inside the code.
+(2) Web (dynamic analysis): Explores live web applications from a real attacker's perspective. Safely validates vulnerabilities and business-logic flaws that only surface in production.
+
+- Key features
+* Offensive security AI: Applies the real-world know-how of global hacking-competition champions to AI, performing advanced assessments far beyond simple pattern matching.
+* Business-logic & multi-stage attack detection: Autonomously traces business-logic flaws such as payment tampering and chained API calls, plus multi-stage attack chains that ordinary scanners miss.
+* Radically fewer false positives: AI rigorously verifies service context and real exploitability, alerting only on genuine threats that urgently need action.
+* Reproduction code & remediation guides: Provides attack reproduction steps, runnable exploit (PoC) code, and tailored fixes so developers can understand and patch issues immediately.

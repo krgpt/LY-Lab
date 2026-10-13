@@ -1,0 +1,82 @@
+﻿LY Lab — AI Education English Translation ("ai education" folder)
+Source: 초중급.docx / 고급.docx (Beginner–Intermediate / Advanced)
+
+[Section title]
+03 ● EDUCATION — AI Education.
+A field-ready AI upskilling program — from beginner and intermediate courses to advanced practice you can apply on the job immediately.
+• AI training for employees & executives: AI leadership, corporate governance, and successful AI Transformation (AX) strategy
+• Hands-on offline AI training: Beyond theory — process automation, generative AI, AI development and workflow adoption
+• Tailored curriculum: Order-made content designed for your industry and skill level
+
+============================================================
+BEGINNER–INTERMEDIATE COURSE
+A Complete Guide to Planning & Running an AI Program for Beginners
+From AI basics to agents, vibe coding, web/app building and AGI self-loops | 8-week program
+============================================================
+
+1. Curriculum Structure (Stages 1–4)
+A 4-stage integrated curriculum that keeps beginner accessibility while reaching autonomous agents (AGI-oriented) and web/app service building — expanding step by step from concepts to agents, tool integration, and service construction.
+
+Stage 1. AI Basics & Conversational Models (LLMs)
+- ChatGPT (OpenAI): the conversational, all-round general model — the baseline for web search and code generation.
+- Claude (Anthropic): ruthless safety, long-context understanding, specialized in high-quality coding and planning documents.
+- Gemini (Google): best-in-class integration with the Google ecosystem (YouTube, Docs, Maps) and multimodal (text · image · voice) processing.
+- Grok (xAI): real-time data from X (formerly Twitter) and autonomous analysis.
+- Basic chatbots (free): one-shot conversations that return only text answers.
+- Paid agent versions: beyond answers — they act with tools. They search the web, run Python code, analyze files, and build charts on their own, including custom purpose-built chatbots (GPTs, Claude Projects).
+
+Stage 2. Autonomous Agent Frameworks & Multimedia AI
+- Agent orchestration (Hermes, OpenClaw): frameworks that autonomously read/write files on local PCs and cloud, run terminal commands, and integrate messenger apps (Telegram, Discord).
+- Brain-and-hands structure: Claude/GPT models decide 'what to do' while OpenClaw/Hermes act as the 'hands and feet' — browsing, emailing, organizing files, running scripts.
+- Multimedia aggregators (Higgsfield): connecting video/image models (Sora, Kling, Veo) in one place to create cinematic video, social shorts, and marketing assets.
+- Cross-media pipeline: practice linking ChatGPT/Claude (script/planning) -> Midjourney/Higgsfield (image/video) -> AI voice synthesis into one pipeline.
+
+Stage 3. Vibe Coding & IDE Integration
+- Vibe coding: describe features in natural language (Korean) and AI proposes and edits full source code inline.
+- VS Code + LLM setup: connect a Claude API key to editor extensions (Claude Dev, Cline, Cursor) — learners bring ideas while AI (Claude/GPT) designs file structures and fixes bugs.
+- Command control practice: instruct AI to create project folders, install libraries, and launch local servers from the terminal.
+
+Stage 4. App & Web Building + Autonomous AGI Behavior (final project)
+- Full-stack web & apps: React / Next.js UI with instant deploy via Vercel/Netlify, mobile packaging with React Native/Flutter, Supabase/Firebase DB integration.
+- Simulated autonomous AGI (Behavioral AI): build Goal -> Plan -> Execution & Self-Correction loops.
+- Capstone: connect OpenClaw/Hermes techniques with your own web/app via API to complete an AI-agent-powered service that works autonomously in the background.
+
+2. Eight Hands-On Weekly Sessions (20% theory + 80% immediate practice — hands-on every session)
+- Session 1 | Comparing the 4 LLM Leaders & Paid Agent Concepts — Learn: strengths of ChatGPT, Claude, Gemini, Grok and how to choose by use case; Gen-1 text output vs. Gen-2 tool use. Build: PDF data analysis and auto chart generation with paid agents; one custom GPTs / Claude Project.
+- Session 2 | Multimedia AI & Media Pipelines — Learn: connecting video/image models via aggregators like Higgsfield; text -> image/video -> AI voice structure. Build: a short-form scenario with Claude; one cinematic video and short marketing asset.
+- Session 3 | Intro to Vibe Coding with VS Code + Claude — Learn: the vibe-coding paradigm; VS Code setup, API keys, extensions. Build: folders, libraries, and a local server via AI commands in the terminal.
+- Session 4 | Responsive Websites from Natural-Language Instructions — Learn: prompt writing for HTML/CSS/JavaScript; GitHub + 1-click deploy (Vercel/Netlify). Build: one portfolio/landing page deployed to a live public URL.
+- Session 5 | Mobile Apps & Database Connections — Learn: React Native / Flutter; sign-up, login, DB with Supabase / Firebase. Build: a mobile UI from AI-written code with data saved to/read from Supabase.
+- Session 6 | Backend APIs & App Advancement — Learn: external API integration; debugging by feeding errors back to AI. Build: an 'AI feature inside my service' via embedded ChatGPT/Claude API.
+- Session 7 | Autonomous Agent Frameworks (Hermes, OpenClaw) — Learn: how OpenClaw/Hermes work (Gateway, SKILL.md, system access); messenger connections. Build: a personal assistant bot exploring PC files, scraping the web, and sending summary reports on command.
+- Session 8 | AGI-Style Self-Loops & Final Presentations — Learn: Goal -> Plan -> Execution -> Self-Correction loops; web/app + background agent integration. Build: [Capstone] a service where background agents work 24/7 on goals entered via web/app — then demo it.
+
+3. Detailed Syllabus for Enrollment
+A. Overview — Course: Hands-on AI Agent & Vibe Coding 8-Week Complete Course for non-majors and beginners / Duration: 8 weeks (once a week, 3 hours / 24 hours total) / Format: 20% theory + 80% live practice & 1:1 coaching / Goals: (1) fully understand the paid-agent ecosystem, (2) learn vibe coding with no coding background, (3) build and deploy a full-stack service with a 24/7 autonomous agent.
+B. Audience & preparation — Founders/planners/marketers wanting fast AI adoption; non-majors wanting to build and deploy their own service; beginners catching up on agentic AI trends. Laptop: Windows 10+ or macOS (Chrome required). Accounts: GitHub + Google. Paid: ChatGPT Plus or Claude Pro recommended (small API costs may apply).
+C. Three takeaways — (1) a responsive website on a live URL, (2) a working mobile app wired to DB + AI APIs, (3) a 24/7 personal AI agent controlled via messenger.
+
+============================================================
+ADVANCED COURSE
+Advanced AI Strategy & AX Hands-On Master Course for Enterprise AI Leaders & CAIOs
+DX/AX strategy, Enterprise RAG, fine-tuning, AI governance & MLOps — 8-week master program
+============================================================
+
+1. Course Design & Framework
+Beyond tool usage or prompt engineering: top-tier architecture and strategic planning ability for CAIOs, DX/AX leaders, and AI project leads.
+Core differentiators — (1) DX-to-AX strategic shift: execution framework + ROI roadmap toward an AI-native organization; (2) Enterprise AI architecture practice: secure document integration, hallucination control, vector DB design, fine-tuning, LoRA; (3) AI governance & infrastructure TCO: cost modeling, on-prem vs. cloud-hybrid, data privacy, security, copyright, governance, AI Act readiness.
+
+2. Eight Advanced Weekly Sessions
+- Session 1 | DX-to-AX paradigm shift & AI strategy — Theory: DX vs. AX essence, AX redefining business models on DX data, maturity models, ROI/TCO estimation. Assignment: assess your company's DX/AX maturity; draft a 3-year AX roadmap; build an ROI simulator.
+- Session 2 | Enterprise LLM architecture (on-prem vs. cloud vs. hybrid) — Theory: commercial (GPT-4, Claude) vs. open-source (Llama 3, DeepSeek, Mistral); selection across security/cost/performance; private-cloud/on-prem design. Assignment: cost-performance simulation and architecture blueprint for your traffic/security needs.
+- Session 3 | Advanced Enterprise RAG — Theory: basic-RAG limits and hallucination causes; hybrid search, re-ranking, parent-document retrievers, contextual compression; vector DB (Pinecone, Milvus, Qdrant) selection. Assignment: build advanced RAG over complex internal PDFs; evaluate precision/recall.
+- Session 4 | LLM fine-tuning & SLM internalization — Theory: fine-tune vs. RAG criteria; LoRA/QLoRA PEFT; domain LLM pipelines (curation, SFT, DPO/RLHF). Assignment: LoRA fine-tune an open-source SLM on a domain dataset; measure gains.
+- Session 5 | Multi-agent systems & orchestration — Theory: beyond single agents; patterns (LangGraph, AutoGen, CrewAI); roles, state management, error recovery. Assignment: build a planner-developer-reviewer multi-agent system; automate an in-house pipeline.
+- Session 6 | Enterprise MLOps & LLMOps — Theory: LLMOps observability; RAGAS/TruLens metrics (correctness, faithfulness, relevance); continuous fine-tuning and CI/CD. Assignment: build a performance/cost/hallucination dashboard; run evaluation orchestration on large test sets.
+- Session 7 | AI governance, enterprise security & risk — Theory: data privacy & security (prompt injection, leakage, PII masking); global regulation (EU AI Act, privacy law) compliance; ethics and hallucination risk. Assignment: enterprise AI security checklist; attack/defense tests; ethics guidelines.
+- Session 8 | AX executive capstone — Theory: pitching AI investment to C-level; AI culture transplant; change management. Assignment: present your company's 'enterprise AX execution plan + system architecture' with expert feedback.
+
+3. Detailed Syllabus for Enrollment
+A. Overview — Course: AX & Advanced Architecture 8-Week Master Course for Enterprise AI Leaders & CAIOs / Duration: 8 weeks (3h weekly / 24h) / Format: 40% C-level lectures + 60% enterprise AI design & practice / Goals: (1) company-specific AI strategy and DX-to-AX business-model redefinition, (2) internalized enterprise AI architectures (RAG, fine-tuning, multi-agent), (3) AI security/governance/MLOps plus C-level AX-ROI persuasion.
+B. Audience & preparation — CAIOs, DX/AX leaders, CIOs/CTOs (enterprise/public); tech leaders and AI PMs; executives planning AI ventures. Prerequisites: basic Python/programming literacy. Bring: laptop (Mac/Windows, 16GB+ RAM).
+C. Three leadership assets — (1) Enterprise AI Architecture Blueprint (on-prem/commercial-hybrid tailored to your business), (2) AX ROI & Business Value Model (concrete ROI/TCO for executives and boards), (3) AI Governance & Compliance Guide (global regulation incl. EU AI Act + leak prevention).

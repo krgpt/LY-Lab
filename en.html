@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LY Lab — Innovating Enterprise Future Value with Security and AI</title>
+<meta name="description" content="LY Lab — tailored IT solutions for enterprise environments, built on years of infrastructure and security practice plus state-of-the-art applied AI.">
+<style>
+:root{
+  --paper:#F0EFEC; --card:#FAF8F4; --ink:#1A1916; --muted:#6f6c66; --faint:#9B9A97;
+  --line:#E2DFD8; --orange:#E4571D; --orange-soft:#F7E3D6;
+  --brown:#4D2D20; --olive:#201403; --beige:#CDBDAE;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.75}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:50;background:rgba(240,239,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:8px;padding:12px 0}
+.wordmark{text-decoration:none;font-weight:800;font-size:18px;letter-spacing:-.5px}
+.wordmark i{font-style:normal;color:var(--orange)}
+.nav-links{display:flex;gap:2px;margin:0 auto}
+.nav-links a{text-decoration:none;font-size:12.5px;font-weight:600;color:var(--ink);padding:8px 10px;border-radius:999px;white-space:nowrap}
+.nav-links a:hover{background:#E7E4DD}
+@media(max-width:900px){.nav-links{display:none}}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:12.5px;font-weight:800}
+.lang a{text-decoration:none;padding:7px 13px;color:var(--muted)}
+.lang a.on{background:var(--ink);color:#fff}
+.hero{padding:88px 0 30px;text-align:left}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:2.5px;color:var(--faint);margin:0 0 18px}
+.eyebrow b{color:var(--orange)}
+.hero h1{font-size:clamp(36px,6vw,58px);line-height:1.2;letter-spacing:-1.5px;margin:0 0 18px;font-weight:800}
+.hero .sub{font-size:16.5px;color:#3c3833;margin:0 0 28px;max-width:62ch}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:13px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-line{background:transparent;color:var(--ink);border-color:#c9c6c0}
+.btn-line:hover{border-color:var(--ink)}
+.hero-shot{margin:44px 0 0;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.hero-shot img{width:100%;aspect-ratio:16/8.2;object-fit:cover}
+.hero-cap{font-size:12px;color:var(--faint);margin:10px 2px 0;letter-spacing:.5px}
+section.block{padding:64px 0 8px}
+.sec-head{margin-bottom:26px}
+.sec-title{font-size:clamp(28px,4.6vw,42px);line-height:1.25;letter-spacing:-1px;margin:0 0 10px;font-weight:800}
+.sec-title .dot{color:var(--orange)}
+.sec-lead{font-size:16px;color:#3c3833;margin:0;max-width:64ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+@media(max-width:600px){.card{padding:22px 20px}}
+.bullets{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.bullets li{font-size:14.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px}
+.bullets li b{display:block;font-size:14.5px;margin-bottom:2px}
+.bullets li span{color:var(--muted);font-size:13.5px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 16px}
+.tabs button{border:1px solid #c9c6c0;background:transparent;padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;color:var(--ink)}
+.tabs button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tabs button:disabled{opacity:.38;cursor:not-allowed;border-style:dashed}
+.tabpane[hidden]{display:none}
+.team-tabs{margin-top:0}
+.team-tabs button{padding:8px 15px;font-size:13px}
+.member-name{font-size:22px;font-weight:800;letter-spacing:-.5px;margin:0 0 12px}
+.member-body p{font-size:14.5px;margin:0 0 12px;color:#33302b}
+.member-body h4{font-size:12px;letter-spacing:2px;color:var(--faint);margin:20px 0 8px}
+.tagrow{display:flex;gap:7px;flex-wrap:wrap}
+.tagrow span{font-size:12.5px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px}
+.stage{margin:26px 0 0}
+.stage>h3{font-size:19px;letter-spacing:-.5px;margin:0 0 4px}
+.stage>p{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+.rows{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.rows li{padding:13px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.rows li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:1px}
+.rows li b{display:block;font-size:14.5px}
+.rows li span{color:var(--muted);font-size:13px}
+.kv{display:grid;gap:8px;margin:12px 0 0;font-size:14px}
+.kv div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.kv b{color:var(--ink)}
+.kv span{color:var(--muted)}
+.darkbox{background:var(--olive);color:#F0EFEC;border-radius:var(--radius);padding:26px;margin:20px 0 0;font-size:14px;white-space:pre-line;line-height:1.8}
+.darkbox b{color:#F5B78E}
+.expand-btn{margin-top:18px;width:100%;text-align:center;background:transparent;border:1.5px dashed #b9b5ad;color:var(--ink);border-radius:12px;padding:13px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.expand-btn:hover{border-color:var(--ink)}
+.expandable[hidden]{display:none}
+.expandable{margin-top:14px}
+.session{border-top:1px solid var(--line);padding:16px 2px}
+.session:last-child{border-bottom:1px solid var(--line)}
+.session h4{margin:0 0 6px;font-size:15.5px;letter-spacing:-.3px}
+.session h4 .n{color:var(--orange);font-weight:800;margin-right:8px}
+.session p{margin:6px 0;font-size:13.5px;color:#3c3833}
+.session p b{color:var(--ink)}
+.slide{font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+.contact-card{background:var(--olive);color:#F0EFEC;border-radius:22px;padding:44px 36px;text-align:center;margin-top:26px}
+.contact-card h3{font-size:clamp(24px,4vw,34px);letter-spacing:-1px;margin:0 0 8px}
+.contact-card h3 i{font-style:normal;color:var(--orange)}
+.contact-card p{font-size:14px;color:rgba(240,239,236,.75);margin:0 0 22px}
+.mailbtn{display:inline-block;background:#F0EFEC;color:var(--ink);font-weight:800;font-size:16px;text-decoration:none;border-radius:999px;padding:14px 34px}
+.mailbtn:hover{background:#fff}
+footer{margin-top:90px;padding-bottom:60px}
+.giant{font-size:clamp(64px,14vw,150px);font-weight:800;letter-spacing:-5px;line-height:1;margin:0}
+.giant i{font-style:normal;color:var(--orange)}
+.foot-row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.to-top{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:20px;cursor:pointer;color:var(--ink)}
+.reveal{opacity:0;transform:translateY(14px);transition:.6s ease}
+.reveal.on{opacity:1;transform:none}
+.ext{font-size:12.5px;color:var(--orange);font-weight:700}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="wordmark" href="#top">LY Lab<i>.</i></a>
+    <nav class="nav-links">
+      <a href="#about">About us</a>
+      <a href="#security">Security</a>
+      <a href="#education">Education</a>
+      <a href="#dev">Development</a>
+      <a href="#consulting">Consulting</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang" style="margin-left:auto"><a href="index.html">KOR</a><a class="on" href="en.html">ENG</a></div>
+  </div>
+</header>
+
+<div class="hero wrap" id="top">
+  <p class="eyebrow">LY LAB <b>●</b> AI · SECURITY TECHNOLOGY PARTNER</p>
+  <h1>Innovating enterprise future value with security and AI.</h1>
+  <p class="sub">We focus not on technology itself, but on the "problems" technology must solve. Building on years of hands-on infrastructure and security experience plus state-of-the-art applied AI, we deliver IT solutions tailored to enterprise environments.</p>
+  <div class="cta-row">
+    <a class="btn btn-dark" href="#contact">Contact us</a>
+    <a class="btn btn-line" href="#security">Explore solutions</a>
+  </div>
+  <figure class="hero-shot" style="margin-left:0;margin-right:0">
+    <img src="company%20intro/back.jpg" alt="LY Lab — AI meeting image">
+  </figure>
+  <p class="hero-cap">LY Lab — the technology partner connecting infrastructure · security practice with applied AI</p>
+</div>
+
+<main class="wrap">
+
+  <section class="block" id="about">
+    <div class="sec-head reveal">
+      <p class="eyebrow">01 <b>●</b> ABOUT</p>
+      <h2 class="sec-title">About<span class="dot">.</span></h2>
+      <p class="sec-lead"><b>A total AI &amp; security technology partner driving business safety and growth.</b> Building on decades of development and security-solution experience, we lead in practical, dependable technology. From web and app development to cybersecurity, cutting-edge AI convergence, and professional training that strengthens employee capability, we deliver the total solutions that carry enterprise digital transformation (DX) and technology innovation to success.</p>
+    </div>
+    <p class="reveal" style="font-size:12px;font-weight:800;letter-spacing:2.5px;color:var(--faint);margin:22px 0 10px">Team</p>
+    <div class="tabs reveal team-tabs" role="tablist" aria-label="Team members">
+      <button class="active" data-member="jack" role="tab">Jack Lee</button>
+      <button data-member="nathan" role="tab">Nathan Yim</button>
+    </div>
+    <div class="card member-body reveal" id="member-jack">
+      <p class="member-name">Jack Lee</p>
+      <p>Having worked in various development fields since 1999, I have accumulated extensive hands-on experience spanning web, mobile app, and desktop application development, as well as the planning and commercialization of security solutions. Particularly since 2016, I have focused heavily on information security, immersing myself in the design and R&amp;D of web-based security solutions.</p>
+      <p>Joining an R&amp;D security lab as a founding member and contributing to the growth of a two-person team into a 22-person organization over five years was a major turning point in my career. Going beyond mere product development, I took the lead in various roles—such as organizational operations, project planning, and technical roadmap establishment—thereby developing the capability to transform security technologies into practical products and services.</p>
+      <p>Key projects include a heterogeneous firewall policy integrated management solution, a digital twin-based security simulation, and an NMS system that centrally collects and manages information from various security appliances. I have also implemented CVE-, CWE-, and CAPEC-based vulnerability analysis automation technology and designed customized response structures tailored to client environments through the modularization of Fortinet SOAR Playbooks.</p>
+      <p>Technically, I have strong capabilities in web backend and full-stack development using Go, Python, Node.js, and Vue.js. I am also proficient in Docker- and Kubernetes-based infrastructure operations as well as log collection and analysis in big data environments. These technical competencies have translated into the sophisticated implementation of security log-based threat detection and response systems, going beyond standard development.</p>
+      <p>Currently, I am pursuing a Master's degree in Information Security at the Graduate School of Information Science, Soongsil University (expected graduation in 2027). While taking related courses in artificial intelligence, I am exploring the convergence of security and AI. My goal is to expand my practical experience with a theoretical foundation and grow as a balanced developer capable of leading technological trends in a shifting security landscape.</p>
+      <p>I am a developer who focuses more on the problems technology needs to solve than on the technology itself. Moving forward, I will dedicate my capabilities to contemplating practical security technologies and building solutions that can be effectively applied to real-world environments.</p>
+      <h4>DEVELOPMENT ROLES</h4>
+      <div class="tagrow"><span>Server/Backend Developer</span><span>Web Full-Stack Developer</span><span>DevOps/Systems Engineer</span><span>Information Security Specialist</span><span>AI/ML Engineer</span></div>
+      <h4>TECH STACK</h4>
+      <div class="tagrow"><span>Go</span><span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>Node.js</span><span>Vue.js</span><span>HTML5</span><span>Linux</span><span>Kali Linux</span><span>PHPCI</span></div>
+    </div>
+    <div class="card member-body reveal" id="member-nathan" hidden>
+      <p class="member-name">Nathan Yim</p>
+      <p style="font-size:12px;letter-spacing:2px;color:var(--faint)">* ABOUT NATHAN</p>
+      <p>Nathan has been working in the cyber security field for 18 years. His main focus is in Cyber Security Consulting, with an expertise in Social Engineering and Cyber Security Education. Through many years of security consulting, his perspective of cyber security has been focused on social engineering more and more.</p>
+      <p>He likes Christopher Hadnagy and never hesitate to recommend his teaching for anyone who wants to study social engineering. As a business director in Joe Black security company(especially in Korea), he is making efforts to introduce people to what real cyber security consulting is. Different from other security consulting companies, JBS approaches security consulting from a new and creative angle.</p>
+      <p style="font-size:12px;letter-spacing:2px;color:var(--faint)">* EXPERIENCE</p>
+      <p>Before security consulting, Nathan has worked in the network system field for 10 years as a business director. He has good relationships with overseas WhiteHat Hackers as well as Korean WhiteHats.</p>
+      <div class="kv">
+        <div><b>Security Consulting:</b> <span>18+ years of experience</span></div>
+        <div><b>Network &amp; Systems Domain:</b> <span>10+ years of experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="security">
+    <div class="sec-head reveal">
+      <p class="eyebrow">02 <b>●</b> SECURITY</p>
+      <h2 class="sec-title">Cybersecurity Solutions<span class="dot">.</span></h2>
+      <p class="sec-lead">Protecting core enterprise assets from increasingly intelligent threats.</p>
+    </div>
+    <div class="card reveal">
+      <p class="member-name">Shadow Guard <a class="ext" href="https://shadowguard.co.kr/" target="_blank" rel="noopener">https://shadowguard.co.kr/ ↗</a></p>
+      <p style="font-size:15px;font-weight:700;margin:0 0 8px">We don't block AI — we block only sensitive data leaks.</p>
+      <p style="font-size:14px;color:#3c3833;margin:0">SHADOWGUARD is an AI security governance service that, instead of blocking employees' generative AI, inspects and controls in real time only the data and conversations flowing toward AI. Employees use AI freely, while the company keeps its critical information safe.</p>
+    </div>
+    <div class="card reveal" style="margin-top:14px">
+      <p class="member-name">AI PEN tester <span style="font-size:12px;font-weight:700;color:var(--orange)">(in development)</span></p>
+      <p style="font-size:14px;color:#3c3833;margin:0 0 6px">A platform that combines the deep insight of security experts with the overwhelming speed of AI to automatically detect and verify enterprise security vulnerabilities — from code to live production environments.</p>
+      <div class="stage">
+        <h3>Core Components</h3>
+        <ul class="rows">
+          <li><b>(1) Code (static analysis)</b><span>Integrates with millions of lines of source code with no complex setup for exhaustive inspection. Tracks data flows to preemptively eliminate structural flaws and threats inside the code.</span></li>
+          <li><b>(2) Web (dynamic analysis)</b><span>Explores live web applications from a real attacker's perspective. Safely validates vulnerabilities and business-logic flaws that only surface in production.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h3>Key Features</h3>
+        <ul class="rows">
+          <li><b>Offensive security AI</b><span>Applies the real-world know-how of global hacking-competition champions to AI, performing advanced assessments far beyond simple pattern matching.</span></li>
+          <li><b>Business-logic &amp; multi-stage attack detection</b><span>Autonomously traces business-logic flaws such as payment tampering and chained API calls, plus multi-stage attack chains that ordinary scanners miss.</span></li>
+          <li><b>Radically fewer false positives</b><span>AI rigorously verifies service context and real exploitability, alerting only on genuine threats that urgently need action.</span></li>
+          <li><b>Reproduction code &amp; remediation guides</b><span>Provides attack reproduction steps, runnable exploit (PoC) code, and tailored fixes so developers can understand and patch issues immediately.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="sec-head reveal">
+      <p class="eyebrow">03 <b>●</b> EDUCATION</p>
+      <h2 class="sec-title">AI Education<span class="dot">.</span></h2>
+      <p class="sec-lead">A field-ready AI upskilling program — from beginner and intermediate courses to advanced practice you can apply on the job immediately.</p>
+      <ul class="bullets">
+        <li><b>AI training for employees &amp; executives</b><span>AI leadership, corporate governance, and successful AI Transformation (AX) strategy</span></li>
+        <li><b>Hands-on offline AI training</b><span>Beyond theory: process automation, generative AI, AI development and workflow adoption</span></li>
+        <li><b>Tailored curriculum</b><span>Order-made content designed for your industry and skill level</span></li>
+      </ul>
+    </div>
+    <div class="tabs reveal" role="tablist" aria-label="AI courses">
+      <button class="active" data-course="basic" role="tab">Beginner–Intermediate</button>
+      <button data-course="advanced" role="tab">Advanced</button>
+    </div>
+
+    <div class="card reveal" id="course-basic">
+      <p class="member-name">A Complete Guide to Planning &amp; Running an AI Program for Beginners</p>
+      <p style="font-size:13.5px;color:var(--muted);margin:0 0 6px">From AI basics to agents, vibe coding, web/app building and AGI self-loops | 8-week program</p>
+      <div class="stage">
+        <h3>1. Curriculum Structure (Stages 1–4)</h3>
+        <p>A 4-stage integrated curriculum that keeps beginner accessibility while reaching autonomous agents (AGI-oriented) and web/app service building — expanding step by step from concepts to agents, tool integration, and service construction.</p>
+        <ul class="rows">
+          <li><b>Stage 1. AI Basics &amp; Conversational Models (LLMs)</b>
+            <span>ChatGPT (OpenAI): the conversational, all-round general model — the baseline for web search and code generation.</span>
+            <span>Claude (Anthropic): ruthless safety, long-context understanding, specialized in high-quality coding and planning documents.</span>
+            <span>Gemini (Google): best-in-class integration with the Google ecosystem (YouTube, Docs, Maps) and multimodal (text · image · voice) processing.</span>
+            <span>Grok (xAI): real-time data from X (formerly Twitter) and autonomous analysis.</span>
+            <span>Basic chatbots (free): one-shot conversations that return only text answers.</span>
+            <span>Paid agent versions: beyond answers — they act with tools. They search the web, run Python code, analyze files, and build charts on their own, including custom purpose-built chatbots (GPTs, Claude Projects).</span></li>
+          <li><b>Stage 2. Autonomous Agent Frameworks &amp; Multimedia AI</b>
+            <span>Agent orchestration (Hermes, OpenClaw): frameworks that autonomously read/write files on local PCs and cloud, run terminal commands, and integrate messenger apps (Telegram, Discord).</span>
+            <span>Brain-and-hands structure: Claude/GPT models decide 'what to do' while OpenClaw/Hermes act as the 'hands and feet' — browsing, emailing, organizing files, running scripts.</span>
+            <span>Multimedia aggregators (Higgsfield): connecting video/image models (Sora, Kling, Veo) in one place to create cinematic video, social shorts, and marketing assets.</span>
+            <span>Cross-media pipeline: practice linking ChatGPT/Claude (script/planning) -&gt; Midjourney/Higgsfield (image/video) -&gt; AI voice synthesis into one pipeline.</span></li>
+          <li><b>Stage 3. Vibe Coding &amp; IDE Integration</b>
+            <span>Vibe coding: describe features in natural language (Korean) and AI proposes and edits full source code inline.</span>
+            <span>VS Code + LLM setup: connect a Claude API key to editor extensions (Claude Dev, Cline, Cursor) — learners bring ideas while AI (Claude/GPT) designs file structures and fixes bugs.</span>
+            <span>Command control practice: instruct AI to create project folders, install libraries, and launch local servers from the terminal.</span></li>
+          <li><b>Stage 4. App &amp; Web Building + Autonomous AGI Behavior (final project)</b>
+            <span>Full-stack web &amp; apps: React / Next.js UI with instant deploy via Vercel/Netlify, mobile packaging with React Native/Flutter, Supabase/Firebase DB integration.</span>
+            <span>Simulated autonomous AGI (Behavioral AI): build Goal -&gt; Plan -&gt; Execution &amp; Self-Correction loops.</span>
+            <span>Capstone: connect OpenClaw/Hermes techniques with your own web/app via API to complete an AI-agent-powered service that works autonomously in the background.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h3>2. Eight Hands-On Weekly Sessions</h3>
+        <p>Built on a '20% theory + 80% immediate practice' ratio — every session is hands-on, making and using something real.</p>
+        <div class="session"><h4><span class="n">●</span>Session 1 | Comparing the 4 LLM Leaders &amp; Paid Agent Concepts</h4><p><b>Learn:</b> strengths of ChatGPT, Claude, Gemini, Grok and how to choose by use case. Gen-1 text output vs. Gen-2 tool use (web search, code execution, file analysis, custom GPTs/Projects).</p><p><b>Build:</b> PDF data analysis and auto chart generation with paid ChatGPT/Claude agents. Complete one custom GPTs / Claude Project.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 2 | Multimedia AI &amp; Media Pipelines</h4><p><b>Learn:</b> connecting video/image models via multimedia aggregators like Higgsfield. The text (script) -&gt; image/video -&gt; AI voice synthesis structure.</p><p><b>Build:</b> a short-form video scenario with Claude; one cinematic video and short marketing asset with Higgsfield and generative tools.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 3 | Intro to Vibe Coding with VS Code + Claude</h4><p><b>Learn:</b> the natural-language vibe-coding paradigm. VS Code setup, Claude/GPT API keys, extensions (Claude Dev, Cline, Cursor).</p><p><b>Build:</b> create folders, install libraries, and run a local server via AI commands in the VS Code terminal.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 4 | Responsive Websites from Natural-Language Instructions</h4><p><b>Learn:</b> prompt writing for HTML/CSS/JavaScript structures. GitHub repo integration and 1-click deploy with Vercel/Netlify.</p><p><b>Build:</b> complete one portfolio or landing page in conversation with AI and deploy it to a live public URL.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 5 | Mobile Apps &amp; Database Connections</h4><p><b>Learn:</b> cross-platform frameworks (React Native / Flutter). Sign-up, login, and DB integration with Supabase / Firebase.</p><p><b>Build:</b> a mobile app UI from AI-written code with user-input data saved to and read from a Supabase DB.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 6 | Backend APIs &amp; App Advancement</h4><p><b>Learn:</b> how external API integration works. Debugging know-how: feeding error messages back to AI for self-correction.</p><p><b>Build:</b> an 'AI feature inside my service' by embedding the ChatGPT/Claude API directly into your app/web service.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 7 | Autonomous Agent Frameworks (Hermes, OpenClaw)</h4><p><b>Learn:</b> how OpenClaw / Hermes work (Gateway, SKILL.md, system access). Connecting agents to messengers like Telegram and Discord.</p><p><b>Build:</b> a personal autonomous assistant bot that explores PC files, scrapes the web, and sends summary reports on messenger command.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 8 | AGI-Style Self-Loops &amp; Final Presentations</h4><p><b>Learn:</b> designing Goal -&gt; Plan -&gt; Execution -&gt; Self-Correction loops. Integrating web/app services with background agents.</p><p><b>Build:</b> [Capstone] a service where background AI agents work 24/7 to complete goals entered via web/app — then demo it.</p></div>
+      </div>
+      <div class="stage">
+        <h3>3. Detailed Syllabus for Enrollment</h3>
+        <p>A. Course overview</p>
+        <div class="kv">
+          <div><b>Course:</b> <span>Hands-on AI Agent &amp; Vibe Coding 8-Week Complete Course for non-majors and beginners</span></div>
+          <div><b>Duration:</b> <span>8 weeks (once a week, 3 hours per session / 24 hours total)</span></div>
+          <div><b>Format:</b> <span>20% theory + 80% live practice &amp; 1:1 coaching (hands-on)</span></div>
+          <div><b>Goal 1:</b> <span>Fully understand the paid-agent ecosystem beyond simple chatbots</span></div>
+          <div><b>Goal 2:</b> <span>Learn 'vibe coding' — building websites and mobile apps in natural language with no coding background</span></div>
+          <div><b>Goal 3:</b> <span>Build and deploy your own full-stack service with a 24/7 autonomous AI agent</span></div>
+        </div>
+        <p style="margin-top:14px">B. Who it's for &amp; preparation</p>
+        <div class="kv">
+          <div><b>Audience 1:</b> <span>Founders, planners, and marketers who want to bring AI into operations or their own business fast</span></div>
+          <div><b>Audience 2:</b> <span>Non-majors with no coding experience who want to build and deploy their own web/app service</span></div>
+          <div><b>Audience 3:</b> <span>Beginners who want to catch up fast on agentic AI and vibe-coding trends</span></div>
+          <div><b>Laptop:</b> <span>Windows 10+ or macOS (Chrome required)</span></div>
+          <div><b>Accounts:</b> <span>GitHub and Google accounts, signed up in advance</span></div>
+          <div><b>Paid services:</b> <span>ChatGPT Plus or Claude Pro recommended (small API costs may apply)</span></div>
+        </div>
+        <p style="margin-top:14px">C. Three takeaways</p>
+        <div class="kv">
+          <div><b>1. Responsive website:</b> <span>a real landing page / portfolio site on a live public URL</span></div>
+          <div><b>2. Mobile app:</b> <span>a working mobile app wired to a DB and AI APIs</span></div>
+          <div><b>3. 24/7 personal AI agent:</b> <span>an autonomous assistant that controls your PC and scrapes work data on messenger command</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal" id="course-advanced" hidden>
+      <p class="member-name">Advanced AI Strategy &amp; AX Hands-On Master Course for Enterprise AI Leaders &amp; CAIOs</p>
+      <p style="font-size:13.5px;color:var(--muted);margin:0 0 6px">DX/AX strategy, Enterprise RAG, fine-tuning, AI governance &amp; MLOps — an 8-week master program</p>
+      <div class="stage">
+        <h3>1. Course Design &amp; Framework</h3>
+        <p>Beyond tool usage or prompt engineering, this 8-week course builds the top-tier architecture skills and strategic planning ability required of CAIOs, DX/AX leaders, and AI project leads at large and mid-sized enterprises.</p>
+        <p><b>Core differentiators</b></p>
+        <ul class="rows">
+          <li><b>DX-to-AX strategic shift</b><span>Beyond DX data foundations: an execution framework and ROI roadmap for transforming into an AI-native organization (AI Transformation).</span></li>
+          <li><b>Enterprise AI architecture practice</b><span>Not chatbot building — advanced hands-on work: secure in-house document integration, hallucination control, vector DB infrastructure design, LLM fine-tuning and LoRA.</span></li>
+          <li><b>AI governance &amp; infrastructure TCO</b><span>Infrastructure cost modeling, on-premises vs. cloud-hybrid choices, enterprise data privacy, security, copyright, AI governance, and AI Act readiness.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h3>2. Eight Advanced Weekly Sessions</h3>
+        <div class="session"><h4><span class="n">●</span>Session 1 | From DX to AX: Paradigm Shift &amp; AI Strategy</h4><p><b>Core theory:</b> the essential difference between DX (digital transformation) and AX (AI transformation). How AX redefines business models on top of DX data infrastructure. Enterprise AI maturity models. ROI and TCO estimation for AI projects.</p><p><b>C-level assignment:</b> [Strategy] assess your company's DX/AX maturity and draft a 3-year AX initiative roadmap. Build an AI-adoption ROI simulator.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 2 | Enterprise LLM Architecture: On-Premises vs. Cloud vs. Hybrid</h4><p><b>Core theory:</b> commercial LLMs (GPT-4, Claude) vs. open-source LLMs (Llama 3, DeepSeek, Mistral). Selection criteria across security, cost, and performance monitoring. Enterprise LLM infrastructure design (private cloud and on-premises).</p><p><b>C-level assignment:</b> [Architecture] run cost-performance simulations (commercial API vs. private LLM) for your traffic and security requirements, and draw the architecture blueprint.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 3 | Advanced Enterprise RAG Architecture</h4><p><b>Core theory:</b> limits of basic RAG and causes of hallucination. Advanced RAG: hybrid search, re-ranking, parent-document retrievers, contextual compression. Vector DB (Pinecone, Milvus, Qdrant) selection and benchmarking.</p><p><b>C-level assignment:</b> [Advanced] build an advanced RAG system over complex internal regulation/contract PDFs and evaluate retrieval precision/recall.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 4 | LLM Fine-Tuning &amp; SLM Internalization</h4><p><b>Core theory:</b> when to fine-tune vs. use RAG. Low-cost parameter-efficient fine-tuning (PEFT) with LoRA and QLoRA. Domain-specific LLM pipelines (data curation, SFT, DPO/RLHF).</p><p><b>C-level assignment:</b> [Technical] prepare a domain dataset, LoRA fine-tune an open-source SLM yourself, and measure the improvement.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 5 | Multi-Agent Systems &amp; Workflow Orchestration</h4><p><b>Core theory:</b> overcoming single-agent limits. Multi-agent orchestration patterns (LangGraph, AutoGen, CrewAI). Role division, state management, and error-recovery loops.</p><p><b>C-level assignment:</b> [Systems] build a multi-agent system playing planner-developer-reviewer roles and automate an in-house pipeline.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 6 | Enterprise MLOps &amp; LLMOps Evaluation and Monitoring</h4><p><b>Core theory:</b> why LLMOps observability matters. Automated RAG/LLM evaluation with RAGAS and TruLens (factual correctness, faithfulness, relevance). Continuous fine-tuning and CI/CD pipelines.</p><p><b>C-level assignment:</b> [Operations] build an LLM performance/cost/hallucination monitoring dashboard and run evaluation orchestration over large test sets.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 7 | AI Governance, Enterprise Security &amp; Risk Management</h4><p><b>Core theory:</b> enterprise data privacy &amp; security (prompt injection, data leakage, PII masking). Global AI regulation (EU AI Act, privacy law) compliance. AI ethics and hallucination risk management.</p><p><b>C-level assignment:</b> [Governance] write an enterprise AI security checklist, test prompt-injection attack/defense, and establish AI ethics guidelines.</p></div>
+        <div class="session"><h4><span class="n">●</span>Session 8 | AX Executive Capstone: Plan &amp; Present Your AI Transformation</h4><p><b>Core theory:</b> pitching AI investment and AX projects to C-level executives. Transplanting a successful AI culture; change-management guides.</p><p><b>C-level assignment:</b> [Final presentation] present an 'enterprise AX execution plan and system architecture' solving your own company's business problem, with expert feedback.</p></div>
+      </div>
+      <div class="stage">
+        <h3>3. Detailed Syllabus for Enrollment</h3>
+        <p>A. Course overview</p>
+        <div class="kv">
+          <div><b>Course:</b> <span>AI Transformation (AX) &amp; Advanced Architecture 8-Week Master Course for Enterprise AI Leaders &amp; CAIOs</span></div>
+          <div><b>Duration:</b> <span>8 weeks (once a week, 3 hours per session / 24 hours total)</span></div>
+          <div><b>Format:</b> <span>40% C-level strategy/architecture lectures + 60% enterprise AI system design &amp; practice</span></div>
+          <div><b>Goal 1:</b> <span>Build company-specific AI strategy and the ability to redefine business models from DX to AX</span></div>
+          <div><b>Goal 2:</b> <span>Internalize enterprise AI architectures: Enterprise RAG, fine-tuning, multi-agent systems</span></div>
+          <div><b>Goal 3:</b> <span>Complete AI security, governance, and MLOps — plus the ability to win C-level buy-in on AX ROI</span></div>
+        </div>
+        <p style="margin-top:14px">B. Who it's for &amp; preparation</p>
+        <div class="kv">
+          <div><b>Audience 1:</b> <span>CAIOs, DX/AX leaders, CIOs, and CTOs at large/mid-sized enterprises and public institutions</span></div>
+          <div><b>Audience 2:</b> <span>Tech leaders and AI PMs directing enterprise AI adoption and infrastructure</span></div>
+          <div><b>Audience 3:</b> <span>Executives and division heads planning AI-driven new business and digital transformation</span></div>
+          <div><b>Prerequisites:</b> <span>Basic understanding of Python and programming languages (enough to read architectures; no advanced coding required)</span></div>
+          <div><b>Bring:</b> <span>A personal laptop (Mac or Windows, 16GB+ RAM recommended)</span></div>
+        </div>
+        <p style="margin-top:14px">C. Three leadership assets you will take home</p>
+        <div class="kv">
+          <div><b>1. Enterprise AI Architecture Blueprint:</b> <span>an optimal on-premises / commercial-hybrid AI architecture tailored to your business</span></div>
+          <div><b>2. AX ROI &amp; Business Value Model:</b> <span>concrete ROI and TCO models that persuade executives and boards</span></div>
+          <div><b>3. AI Governance &amp; Compliance Guide:</b> <span>a company-specific AI security &amp; governance guide covering global regulation (EU AI Act) and data-leak prevention</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="dev">
+    <div class="sec-head reveal">
+      <p class="eyebrow">04 <b>●</b> BUILD</p>
+      <h2 class="sec-title">App &amp; Web Development<span class="dot">.</span></h2>
+      <p class="sec-lead">High-performance, highly available, optimized web &amp; mobile applications.</p>
+      <ul class="bullets">
+        <li><b>Full-stack &amp; backend</b><span>Highly scalable architecture design with Go, Python, Node.js, Vue.js</span></li>
+        <li><b>Cloud &amp; DevOps infrastructure</b><span>Stable container infrastructure on Docker and Kubernetes</span></li>
+        <li><b>Data-driven systems</b><span>Big-data log collection, analysis, and monitoring systems</span></li>
+      </ul>
+      <button class="expand-btn" data-target="dev-more">Show more +</button>
+      <div class="card expandable" id="dev-more" hidden>
+        <p class="member-name" style="font-size:18px">Example: 8-Week Intro Course to AI-Powered App &amp; Web Development</p>
+        <div class="stage"><h3>[Course Overview]</h3>
+          <div class="kv">
+            <div><b>Goal:</b> <span>Learn to orchestrate AI agents and ship your own website plus iOS/Android app service in 8 weeks — actually deployed</span></div>
+            <div><b>For:</b> <span>beginners with little coding experience, planners, designers, aspiring solo founders</span></div>
+            <div><b>Core stack</b></div>
+            <div><b>AI &amp; IDE tools:</b> <span>Cursor AI, v0.dev, Claude / ChatGPT</span></div>
+            <div><b>Frontend &amp; mobile:</b> <span>React / React Native (Expo) — write once for web and mobile</span></div>
+            <div><b>Backend &amp; DB:</b> <span>Supabase (database and login)</span></div>
+            <div><b>Deploy:</b> <span>Vercel (web), EAS (app builds and testing)</span></div>
+          </div>
+        </div>
+        <div class="stage"><h3>[8-Week Curriculum]</h3>
+          <div class="session"><h4><span class="n">●</span>Phase 1: AI vibe-coding intro &amp; UI design (weeks 1–2)</h4><p><b>Week 1: how development works in the AI era + environment setup</b></p><p>* Understanding the AI coding stack (how LLMs and AI coding agents work — and their limits)</p><p>* Environment setup: installing the Cursor editor, extensions, and AI model settings</p><p>* Practice: build a simple landing page with Cursor's Edit/Chat/Composer modes</p><p><b>Week 2: high-speed UI/UX prototyping with v0 and AI</b></p><p>* Auto-generating UI components from text with v0.dev</p><p>* Bringing generated UI code into Cursor and integrating it into your project</p><p>* Practice: finish a responsive web UI layout with simple state-data binding</p></div>
+          <div class="session"><h4><span class="n">●</span>Phase 2: backend integration &amp; finishing a web app (weeks 3–4)</h4><p><b>Week 3: backend and database with Supabase</b></p><p>* DB basics and Backend-as-a-Service (BaaS) concepts</p><p>* Auto-generating DB table structures with AI prompts</p><p>* Building sign-up / login (Auth)</p><p>* Practice: user management and CRUD wired through Supabase</p><p><b>Week 4: completing and deploying a full-stack web project</b></p><p>* Business-logic implementation and bug debugging with AI</p><p>* Deploying a custom-domain website in a minute with Vercel</p><p>* Practice: your own web service, live in production</p></div>
+          <div class="session"><h4><span class="n">●</span>Phase 3: expanding from web to mobile apps (weeks 5–6)</h4><p><b>Week 5: cross-platform apps with React Native (Expo)</b></p><p>* Strategies for moving web code to mobile (React Native &amp; Expo basics)</p><p>* Mobile-native UX/UI components (navigation, touch events, tab bars)</p><p>* Practice: convert your web project to an Expo app with Cursor AI and test on a real phone</p><p><b>Week 6: native smartphone features</b></p><p>* Controlling mobile hardware features with AI guidance</p><p>* Camera, gallery, GPS location, and push notifications</p><p>* Practice: a mobile feature using photo upload and location data</p></div>
+          <div class="session"><h4><span class="n">●</span>Phase 4: polish &amp; app-store launch prep (weeks 7–8)</h4><p><b>Week 7: project polish &amp; AI debugging know-how</b></p><p>* Tuning AI performance per project with .cursorrules files</p><p>* Fixing misbehaving code and rewriting AI prompts</p><p>* Final responsive checks across screen sizes and design detailing</p><p><b>Week 8: app builds, store submission &amp; capstone demos</b></p><p>* Understanding Android and iOS builds (EAS Build)</p><p>* Google Play Store and Apple App Store submission procedures and guidelines</p><p>* Practice: final capstone presentations, feedback, and a continued-learning roadmap</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="consulting">
+    <div class="sec-head reveal">
+      <p class="eyebrow">05 <b>●</b> CONSULTING</p>
+      <h2 class="sec-title">Enterprise AI &amp; Security Consulting<span class="dot">.</span></h2>
+      <p class="sec-lead">Strategic technology consulting for real-world enterprise problems.</p>
+      <ul class="bullets">
+        <li><b>Security consulting</b><span>Asset protection, security policy, vulnerability reviews, and security-solution adoption strategy</span></li>
+        <li><b>AI adoption &amp; platform consulting</b><span>Analyzing enterprise data and work environments to recommend optimal AI services and infrastructure</span></li>
+        <li><b>Technology direction</b><span>Practical technology adoption and a sustainable growth roadmap amid shifting IT and security trends</span></li>
+      </ul>
+      <button class="expand-btn" data-target="con-more">Show more +</button>
+      <div class="card expandable" id="con-more" hidden>
+        <p class="member-name" style="font-size:18px">- Example Guide to Executive &amp; AI Consulting -</p>
+        <p style="font-size:15px;font-weight:700;margin:0">A Guide to Driving AI Consulting (AX/DX) for Small &amp; Mid-Sized Enterprises</p>
+        <p style="font-size:13.5px;color:var(--muted)">For small and mid-sized enterprises, consulting must prove fast ROI and shop-floor applicability — not grand narratives.</p>
+        <p style="font-size:13.5px">If DX (digital transformation) builds the system that digitizes and connects work and data, AX (AI transformation) is the structural shift where AI performs work itself or supports decisions on top of digitized data and systems.</p>
+        <p style="font-size:13.5px">Combining both: a 4-phase end-to-end consulting playbook for reinventing company structure and ways of working.</p>
+        <div class="stage"><h3>Phase 1: Diagnosis &amp; Concept Alignment (weeks 1–2)</h3>
+          <p>Workshops with the CEO and key executives define DX vs. AX and assess where the company stands today.</p>
+          <div class="kv">
+            <div><b>DX vs. AX framing</b></div>
+            <div><b>DX:</b> <span>moving manual paper/Excel work onto digital systems (ERP, CRM, groupware) and accumulating data</span></div>
+            <div><b>AX:</b> <span>using accumulated data so AI automates work and supports analysis and judgment — fundamentally changing how work gets done</span></div>
+            <div><b>DX/AX maturity assessment</b></div>
+            <div><b>Data asset review:</b> <span>how well internal data is accumulated in unstructured (PDF, documents) and structured (DB, ERP) form</span></div>
+            <div><b>IT infrastructure &amp; security review:</b> <span>on-premises/cloud environments, network separation, and data-leak risk levels</span></div>
+            <div><b>Key deliverables:</b> <span>DX/AX assessment report, executive direction agreement</span></div>
+          </div>
+        </div>
+        <div class="stage"><h3>Phase 2: Domain Breakdown &amp; Opportunity Discovery (weeks 3–4) — where should AI attach?</h3>
+          <p>Decompose the company's value chain (planning – production/development – marketing/sales – corporate support) to surface AI target tasks.</p>
+          <div class="kv">
+            <div><b>Process breakdown</b></div>
+            <div><b>Surface bottleneck tasks that are highly repetitive with the right judgment complexity, by department</b></div>
+            <div><b>Examples:</b> <span>sales (auto-generating quotes/proposals), corporate support (natural-language revenue analysis on ERP data), production/quality (RAG search over technical manuals, vision inspection)</span></div>
+            <div><b>Priority matrix</b></div>
+            <div><b>Map priorities on business impact (time saved) vs. technical feasibility (data readiness)</b></div>
+            <div><b>Select 2–3 quick-win tasks for fast results plus long-term company-wide initiatives</b></div>
+            <div><b>Key deliverables:</b> <span>company-wide AX roadmap, prioritized initiative definitions</span></div>
+          </div>
+        </div>
+        <div class="stage"><h3>Phase 3: PoC &amp; Structural Design (weeks 5–8) — proving small wins, redesigning the organization</h3>
+          <p>Instead of changing everything at once, prove real performance and productivity gains on selected quick-win tasks.</p>
+          <div class="kv">
+            <div><b>PoC execution</b></div>
+            <div><b>Build and test AI workflows (RAG document search, AI agents, API integrations) on target tasks</b></div>
+            <div><b>Quantitative KPIs:</b> <span>measure real before/after results such as task-time reduction and error-rate reduction</span></div>
+            <div><b>Redesigning the organization &amp; ways of working</b></div>
+            <div><b>Redefining human–AI roles:</b> <span>AI agents handle data gathering and drafting; people own final review and decisions</span></div>
+            <div><b>Security &amp; governance:</b> <span>PII masking and internal confidentiality-leak prevention guidelines</span></div>
+            <div><b>Key deliverables:</b> <span>PoC results report, AI-centric organization and workflow redesign (SOP)</span></div>
+          </div>
+        </div>
+        <div class="stage"><h3>Phase 4: Company-Wide Rollout &amp; Internalization (weeks 9–12) — building an AI organization that lasts</h3>
+          <p>Hand over the system so the company sustains and grows AX on its own after consulting ends.</p>
+          <div class="kv">
+            <div><b>In-house AI literacy training &amp; culture</b></div>
+            <div><b>AI leadership training for C-level and managers (AI-driven decision systems)</b></div>
+            <div><b>Hands-on prompt engineering &amp; AI-agent practice for practitioners</b></div>
+            <div><b>Forming an in-house AX task force (TF) and handover</b></div>
+            <div><b>Selecting AI champions per department to keep discovering new AI initiatives</b></div>
+            <div><b>Wrap-up &amp; operating roadmap</b></div>
+            <div><b>Mid-to-long-term AI infrastructure plans and government-program linkage guidance</b></div>
+            <div><b>Key deliverables:</b> <span>department AI playbooks (SOP), in-house AI internalization training manual</span></div>
+          </div>
+        </div>
+        <div class="stage"><h3>Keys to Business Success</h3>
+          <div class="kv">
+            <div><b>1. Defuse security concerns first:</b> <span>present security measures from the diagnosis stage — no-training-on-data principles, on-premises/closed-network API integration.</span></div>
+            <div><b>2. Connect, don't replace:</b> <span>instead of ripping out ERP/MES, design AI to work alongside via APIs or RAG — cutting cost and risk.</span></div>
+            <div><b>3. Make bottom-up wins visible:</b> <span>solve practitioners' everyday annoyances first (spreadsheet cleanup, document summaries) to minimize resistance.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="contact-card reveal">
+      <p class="eyebrow" style="color:#F5B78E">06 ● CONTACT</p>
+      <h3>Tell us your problem<i>.</i></h3>
+      <p>Before technology itself, we listen to the problem your technology must solve.</p>
+      <a class="mailbtn" href="mailto:contact@lylab.com">contact@lylab.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="giant">lylab<i>.</i></p>
+    <div class="foot-row">
+      <span>LY Lab — Security · AI · Education · Development · Consulting</span>
+      <span>contact@lylab.com</span>
+      <span>© 2026 • All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// team tabs (Jack Lee default; placeholders disabled)
+document.querySelectorAll('[data-member]').forEach(b=>{
+  if(b.disabled) return;
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-member]').forEach(x=>{if(!x.disabled)x.classList.remove('active')});
+    b.classList.add('active');
+    document.getElementById('member-jack').hidden = b.dataset.member!=='jack';
+    document.getElementById('member-nathan').hidden = b.dataset.member!=='nathan';
+  });
+});
+// course tabs
+document.querySelectorAll('[data-course]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-course]').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById('course-basic').hidden = b.dataset.course!=='basic';
+    document.getElementById('course-advanced').hidden = b.dataset.course!=='advanced';
+  });
+});
+// expand toggles
+document.querySelectorAll('.expand-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const el=document.getElementById(b.dataset.target);
+    const open=el.hidden;
+    el.hidden=!open;
+    b.textContent=open?'Show less -':b.textContent.replace('Show less -','Show more +');
+    if(open)el.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.06});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

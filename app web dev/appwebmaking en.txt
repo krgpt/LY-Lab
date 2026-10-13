@@ -1,0 +1,55 @@
+LY Lab — App & Web Development English Translation ("app web dev" folder)
+Source: appwebmaking.txt (shown in full via "Show more" on the site)
+
+Example: 8-Week Intro Course to AI-Powered App & Web Development
+
+[Course Overview]
+- Goal: Learn to orchestrate AI agents and ship your own website plus iOS/Android app service in 8 weeks — actually deployed.
+- For: beginners with little coding experience, planners, designers, aspiring solo founders.
+- Core stack:
+  - AI & IDE tools: Cursor AI, v0.dev, Claude / ChatGPT
+  - Frontend & mobile: React / React Native (Expo) — write once for web and mobile
+  - Backend & DB: Supabase (database and login)
+  - Deploy: Vercel (web), EAS (app builds and testing)
+
+[8-Week Curriculum]
+Phase 1: AI vibe-coding intro & UI design (weeks 1–2)
+- Week 1: how development works in the AI era + environment setup
+  * Understanding the AI coding stack (how LLMs and AI coding agents work — and their limits)
+  * Environment setup: installing the Cursor editor, extensions, and AI model settings
+  * Practice: build a simple landing page with Cursor's Edit/Chat/Composer modes
+- Week 2: high-speed UI/UX prototyping with v0 and AI
+  * Auto-generating UI components from text with v0.dev
+  * Bringing generated UI code into Cursor and integrating it into your project
+  * Practice: finish a responsive web UI layout with simple state-data binding
+
+Phase 2: backend integration & finishing a web app (weeks 3–4)
+- Week 3: backend and database with Supabase
+  * DB basics and Backend-as-a-Service (BaaS) concepts
+  * Auto-generating DB table structures with AI prompts
+  * Building sign-up / login (Auth)
+  * Practice: user management and CRUD wired through Supabase
+- Week 4: completing and deploying a full-stack web project
+  * Business-logic implementation and bug debugging with AI
+  * Deploying a custom-domain website in a minute with Vercel
+  * Practice: your own web service, live in production
+
+Phase 3: expanding from web to mobile apps (weeks 5–6)
+- Week 5: cross-platform apps with React Native (Expo)
+  * Strategies for moving web code to mobile (React Native & Expo basics)
+  * Mobile-native UX/UI components (navigation, touch events, tab bars)
+  * Practice: convert your web project to an Expo app with Cursor AI and test on a real phone
+- Week 6: native smartphone features
+  * Controlling mobile hardware features with AI guidance
+  * Camera, gallery, GPS location, and push notifications
+  * Practice: a mobile feature using photo upload and location data
+
+Phase 4: polish & app-store launch prep (weeks 7–8)
+- Week 7: project polish & AI debugging know-how
+  * Tuning AI performance per project with .cursorrules files
+  * Fixing misbehaving code and rewriting AI prompts
+  * Final responsive checks across screen sizes and design detailing
+- Week 8: app builds, store submission & capstone demos
+  * Understanding Android and iOS builds (EAS Build)
+  * Google Play Store and Apple App Store submission procedures and guidelines
+  * Practice: final capstone presentations, feedback, and a continued-learning roadmap

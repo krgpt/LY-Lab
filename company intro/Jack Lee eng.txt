@@ -1,0 +1,20 @@
+Jack Lee
+
+Having worked in various development fields since 1999, I have accumulated extensive hands-on experience spanning web, mobile app, and desktop application development, as well as the planning and commercialization of security solutions. Particularly since 2016, I have focused heavily on information security, immersing myself in the design and R&D of web-based security solutions.
+
+Joining an R&D security lab as a founding member and contributing to the growth of a two-person team into a 22-person organization over five years was a major turning point in my career. Going beyond mere product development, I took the lead in various roles—such as organizational operations, project planning, and technical roadmap establishment—thereby developing the capability to transform security technologies into practical products and services.
+
+Key projects include a heterogeneous firewall policy integrated management solution, a digital twin-based security simulation, and an NMS system that centrally collects and manages information from various security appliances. I have also implemented CVE-, CWE-, and CAPEC-based vulnerability analysis automation technology and designed customized response structures tailored to client environments through the modularization of Fortinet SOAR Playbooks.
+
+Technically, I have strong capabilities in web backend and full-stack development using Go, Python, Node.js, and Vue.js. I am also proficient in Docker- and Kubernetes-based infrastructure operations as well as log collection and analysis in big data environments. These technical competencies have translated into the sophisticated implementation of security log-based threat detection and response systems, going beyond standard development.
+
+Currently, I am pursuing a Master's degree in Information Security at the Graduate School of Information Science, Soongsil University (expected graduation in 2027). While taking related courses in artificial intelligence, I am exploring the convergence of security and AI. My goal is to expand my practical experience with a theoretical foundation and grow as a balanced developer capable of leading technological trends in a shifting security landscape.
+
+I am a developer who focuses more on the problems technology needs to solve than on the technology itself. Moving forward, I will dedicate my capabilities to contemplating practical security technologies and building solutions that can be effectively applied to real-world environments.
+
+* Development Roles
+Server/Backend Developer | Web Full-Stack Developer | DevOps/Systems Engineer | Information Security Specialist | AI/ML Engineer
+
+* Tech Stack
+Go, Python, C++, Java, JavaScript, Node.js, Vue.js, HTML5, Linux, Kali Linux, PHPCI
+
